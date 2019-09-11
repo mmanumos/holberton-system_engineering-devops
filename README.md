@@ -1,0 +1,1 @@
+**Initial README for SHELL BASICS holberton project**
