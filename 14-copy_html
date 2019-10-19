@@ -1,2 +1,0 @@
-#!/bin/bash
-cp -R *html /home/vagrant/holberton-system_engineering-devops
