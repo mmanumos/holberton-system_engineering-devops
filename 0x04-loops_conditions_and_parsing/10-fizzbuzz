@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# This script is displaying words if the number is multiple from 3 or 5
+c=1
+while ((c <= 100)); do
+    if ((c % 3 == 0 & c % 5 == 0));
+       then
+	   echo "FizzBuzz"
+    elif ((c % 3 == 0));
+    then
+	 echo "Fizz"
+    elif ((c % 5 == 0));
+    then
+	 echo "Buzz"
+    else
+	echo "$c"
+    fi
+    ((c++))
+done	
