@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # This script is displaying "Holberton School" with conditionals to show other sentences.
+c=1
 while ((c <= 20)); do
     echo "$c"
     case $c in
