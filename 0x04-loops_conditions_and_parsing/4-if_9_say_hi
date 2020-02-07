@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 10 times and Hi if c is 9
+while ((c < 10)); do
+    if((c == 9));then
+	echo "Hi"
+    fi
+    echo "Holberton School";
+    ((c++))
+done	
