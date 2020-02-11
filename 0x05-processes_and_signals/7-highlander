@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Kills the process of the before task, using pkill and input like was typed in comand line
+while :
+do
+    echo "To infinity and beyond"
+    trap "echo I am invincible!!!" SIGTERM
+    sleep 2
+done
