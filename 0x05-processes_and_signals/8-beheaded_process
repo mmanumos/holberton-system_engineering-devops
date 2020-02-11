@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Kills the process of the before task, searching the id by the full pattern used in the console, in this case the name file
+pkill -9 -f ./7-highlander
