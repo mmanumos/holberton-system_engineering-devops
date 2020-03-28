@@ -4,7 +4,7 @@ sudo apt-get -y update
 sudo apt-get -y install nginx
 
 #Change index.html to read "Holberton School"
-echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html
+echo "Holberton School" | sudo tee /var/www/html/index.nginx-debian.html
 sudo service nginx start
 lines="location /redirect_me {\nrewrite ^/(.*)$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n}"
 sudo sed -i "30i $lines" /etc/nginx/sites-available/default
