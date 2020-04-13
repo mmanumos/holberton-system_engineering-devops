@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# The port for nginx is changed to 8080 and its service is restart with nginx user
+sed -i "s/80 default/8080 default/" /etc/nginx/sites-enabled/default
+sed -i "s/80/8080/" /etc/apache2/ports.conf
+sudo pkill apache2
+sudo service apache2 restart
+sudo service apache2 stop
+sudo chmod +r /etc/nginx/nginx.conf
+sudo -u nginx service nginx restart
