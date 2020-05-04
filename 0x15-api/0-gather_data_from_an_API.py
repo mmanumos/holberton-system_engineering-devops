@@ -11,9 +11,9 @@ if __name__ == "__main__":
     list_tasks = []
     for task in emplo_tasks:
         if task["completed"] is True:
-            list_tasks.append(task["title"])
+            list_tasks.append(task.get("title"))
 
-    print("Employee " + emplo_info["name"] + " is done with tasks ({}/{}):"
+    print("Employee " + emplo_info.get("name") + " is done with tasks ({}/{}):"
           .format(len(list_tasks), len(emplo_tasks)))
     for task in list_tasks:
-        print("\t{}".format(task))
+        print("\t {}".format(task))
