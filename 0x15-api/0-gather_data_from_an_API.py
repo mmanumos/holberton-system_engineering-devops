@@ -13,7 +13,7 @@ if __name__ == "__main__":
         if task["completed"] is True:
             list_tasks.append(task.get("title"))
 
-    print("Employee " + emplo_info.get("name") + " is done with tasks ({}/{}):"
+    print("Employee " + emplo_info.get("name") + " is done with tasks({}/{}):"
           .format(len(list_tasks), len(emplo_tasks)))
     for task in list_tasks:
         print("\t {}".format(task))
