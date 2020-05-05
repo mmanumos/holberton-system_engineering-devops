@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""  """
+""" Exporting data of an API to a Json file """
 if __name__ == "__main__":
     import requests as req
     from sys import argv
