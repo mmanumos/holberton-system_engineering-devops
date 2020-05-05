@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""  """
+""" Exporting data to a Csv file  """
 if __name__ == "__main__":
     import requests as req
     from sys import argv
