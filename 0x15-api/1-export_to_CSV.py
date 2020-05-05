@@ -14,6 +14,6 @@ if __name__ == "__main__":
         file = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
         for task in emplo_tasks:
             file.writerow([emplo_id,
-                           emplo_info.get("name"),
+                           emplo_info.get("username"),
                            task.get("completed"),
                            task.get("title")])
