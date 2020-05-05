@@ -15,7 +15,7 @@ if __name__ == "__main__":
         dict_task = {}
         dict_task["task"] = task.get("title")
         dict_task["completed"] = task.get("completed")
-        dict_task["completed"] = task.get("completed")
+        dict_task["username"] = emplo_info.get("username")
         list_task.append(dict_task)
 
     dict_task_emplo = {emplo_id: list_task}
