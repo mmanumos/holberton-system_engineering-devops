@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""  """
+""" Getting data of API to show """
 if __name__ == "__main__":
     import requests as req
     from sys import argv
