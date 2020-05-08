@@ -6,7 +6,8 @@ import requests as re
 def recurse(subreddit, hot_list=[], after=""):
     """ Return all titles in a list """
     headers = {'User-agent': 'me'}
-    url = 'https://www.reddit.com/r/{}/hot.json?after={}'.format(subreddit, after)
+    url = 'https://www.reddit.com/r/{}/hot.json?after={}'.format(subreddit,
+                                                                 after)
     print(url)
     data = re.get(url, headers=headers, allow_redirects=False).json()
     try:
