@@ -8,7 +8,6 @@ def recurse(subreddit, hot_list=[], after=""):
     headers = {'User-agent': 'me'}
     url = 'https://www.reddit.com/r/{}/hot.json?after={}'.format(subreddit,
                                                                  after)
-    print(url)
     data = re.get(url, headers=headers, allow_redirects=False).json()
     try:
         list_children = data.get('data').get('children')
