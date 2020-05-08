@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Function to return a value getted by an API """
 import requests as re
 
 
